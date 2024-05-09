@@ -11,12 +11,13 @@ export const Navbar = () => {
         <div className="leftside">
           <img src={logo} height="40px" width="40px" />
           <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
           <Link to="/contact">Contatti</Link>
         </div>
         <div className="rightside">
           <div className="link-container">
             <Link to="/cart">
-              <ShoppingCart size={32} />
+              <ShoppingCart size={34} />
             </Link>
           </div>
         </div>

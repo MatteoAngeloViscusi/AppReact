@@ -18,7 +18,7 @@ export const Shop = () => {
   return (
     <div className="shop">
       <h1>Nutrition Sport Shop</h1>
-      <h3>visita il nostro shop qui sotto!</h3>
+      <h3>Visita il nostro shop qui sotto!</h3>
       <hr />
       <div className="products">
         {PRODUCTS.map((product) => (
