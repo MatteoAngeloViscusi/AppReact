@@ -1,0 +1,46 @@
+.contact-container {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-top: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info p strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .team-member {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    color: #666;
+  }
+  
