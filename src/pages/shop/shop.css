@@ -4,6 +4,20 @@
   font-size: 40px;
 }
 
+.filter {
+  text-align: center; /* Per centrare il testo all'interno del div */
+  margin: 0 auto; /* Per centrare il div orizzontalmente */
+  width: 100%; /* Larghezza desiderata del filtro */
+}
+
+.filter input{
+  text-align: center;
+  padding: 8px;
+  margin-top: 50px;
+  font-size: 20px; /* Aggiunto il font-size per allineare con gli altri input */
+  color: #ffffff;
+}
+
 .products {
   width: 80%;
   height: auto;
@@ -16,7 +30,8 @@
   border-radius: 15px;
   width: 300px;
   height: 500px;
-  margin: 100px;
+  margin-block: 50px;
+  margin-inline: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,9 +70,8 @@ h3{
 }
 
 .addToCartBttn:hover {
-  background-color: rgb(117, 117, 117);
-  color: black;
-  cursor: pointer;
+  background-color: #8a8a8a;
+  border: 2px solid #8a8a8a;
 }
 
 

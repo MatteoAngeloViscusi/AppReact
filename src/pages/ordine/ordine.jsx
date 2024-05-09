@@ -7,7 +7,9 @@ export const Ordine = () => {
 
     return (
     <div>
-        <br /><br />
+        <h1>Completa l'acquisto</h1>
+            <h3>Scegli il metodo di pagamento</h3>
+            <hr />
         <div className='ordine-container'>
             <label htmlFor="nome">Nome:  </label>
             <input type="text" id="nome" name="nome" required/><br/>
@@ -29,7 +31,7 @@ export const Ordine = () => {
             <input  type="text" id="indirizzo" name="indirizzo" required/><br/>
             
             <label htmlFor="note">Note Aggiuntive:  </label>
-            <input type="text" id="note" name="note" /><br/><br/>
+            <textarea id="note" name="note" rows={5}></textarea><br/><br/>
             
             <button onClick={() => navigate("/checkout")}>Completa Ordine</button>
         </div>

@@ -11,6 +11,7 @@ export const Product = (props) => {
   const toggleEnlarged = () => {
     setIsEnlarged(!isEnlarged);
   };
+  
 
   return (
     <div className="product">

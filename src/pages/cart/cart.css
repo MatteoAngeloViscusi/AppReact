@@ -62,18 +62,21 @@ img {
 }
 
 .checkout button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: 2px solid #fff; /* Bordo bianco di 2px */
-  border-radius: 5px;
-  background-color: transparent; /* Sfondo nero */
-  color: #fff; /* Testo bianco */
+  background-color: transparent;
+  background-color: rgb(255, 255, 255);
+  min-width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  font-size: 15px;
 }
 
 
 .checkout button:hover {
-  background-color: #0056b3;
+  background-color: #8a8a8a;
+  border: 2px solid #8a8a8a;
 }
 
 .empty-cart {

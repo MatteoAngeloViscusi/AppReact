@@ -15,13 +15,25 @@ export const Shop = () => {
     setEnlargedProduct(null);
   };
 
+  const [filter, setFilter] = useState(""); 
+
   return (
     <div className="shop">
       <h1>Nutrition Sport Shop</h1>
       <h3>Visita il nostro shop qui sotto!</h3>
       <hr />
+      <div className="filter">
+      <input
+        type="text"
+        placeholder="Cerca..."
+        value={filter}
+        onChange={(e) => setFilter(e.target.value)}
+      />
+      </div>
       <div className="products">
-        {PRODUCTS.map((product) => (
+        {PRODUCTS.filter((product) =>
+          product.productName.toLowerCase().includes(filter.toLowerCase())
+        ).map((product) => (
           <Product
             key={product.id}
             data={product}
@@ -35,12 +47,13 @@ export const Shop = () => {
             <button className="close-btn" onClick={closeEnlargedProduct}>
               Chiudi
             </button>
-            <h2>{enlargedProduct.name}</h2>
+            <h2>{enlargedProduct.productName}</h2>
             <p>{enlargedProduct.description}</p>
-            <img src={enlargedProduct.image} alt={enlargedProduct.name} />
+            <img src={enlargedProduct.productImage} alt={enlargedProduct.productName} />
           </div>
         </div>
       )}
     </div>
   );
+  
 };
