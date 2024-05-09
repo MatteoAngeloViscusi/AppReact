@@ -1,0 +1,44 @@
+.ordine-container {
+    width: 600px;
+    margin: 0 auto;
+    border: 5px solid #09ff008e;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .ordine-container label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .ordine-container input[type="text"],
+  .ordine-container input[type="email"],
+  .ordine-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .ordine-container button {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+  }
+  
+  .ordine-container button:hover {
+    background-color: #09ff008e;
+    border: 2px solid #09ff008e;
+  }
+  

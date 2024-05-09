@@ -13,12 +13,7 @@ export const Cart = () => {
   const navigate = useNavigate();
 
   const handleCheckout = () => {
-    if (orderCompleted) {
-      navigate("/checkout/order-completed");
-    } else {
-      checkout();
-      navigate("/checkout");
-    }
+    navigate("/ordine");
   };
 
   return (
@@ -29,9 +24,9 @@ export const Cart = () => {
       <div className="carrello">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} key={product.id} />; // Added key prop
+            return <CartItem data={product} key={product.id} />; 
           }
-          return null; // Return null for products not in the cart
+          return null;
         })}
       </div>
 
