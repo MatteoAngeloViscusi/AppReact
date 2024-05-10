@@ -5,17 +5,17 @@
 }
 
 .filter {
-  text-align: center; /* Per centrare il testo all'interno del div */
-  margin: 0 auto; /* Per centrare il div orizzontalmente */
-  width: 100%; /* Larghezza desiderata del filtro */
+  text-align: center; 
+  margin: 0 auto; 
+  width: 100%; 
 }
 
 .filter input{
   text-align: center;
-  padding: 8px;
-  margin-top: 50px;
-  font-size: 20px; /* Aggiunto il font-size per allineare con gli altri input */
-  color: #ffffff;
+  padding: 10px;
+  width: 350px;
+  font-size: 20px;
+  color: #000000;
 }
 
 .products {
@@ -29,14 +29,26 @@
 .product {
   border-radius: 15px;
   width: 350px;
-  height: 550px;
-  margin-block: 50px;
-  margin-inline: 100px;
+  height: 600px;
+  margin-block: 70px;
+  margin-inline: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(255, 255, 255);
+}
+
+h2{
+  text-align: center;
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3{
@@ -47,6 +59,7 @@ h3{
 
 .product img {
   width: 300px;
+  height: 300px;
 }
 
 .product .description {

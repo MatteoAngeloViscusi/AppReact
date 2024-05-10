@@ -21,14 +21,15 @@ export const Shop = () => {
     <div className="shop">
       <h1>Nutrition Sport Shop</h1>
       <h3>Visita il nostro shop qui sotto!</h3>
-      <hr />
+      <hr /><br />
       <div className="filter">
-      <input
-        type="text"
-        placeholder="Cerca..."
-        value={filter}
-        onChange={(e) => setFilter(e.target.value)}
-      />
+        <h2>Cerca i prodotti desiderati</h2>
+        <input
+          type="text"
+          placeholder="Cerca..."
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+        />
       </div>
       <div className="products">
         {PRODUCTS.filter((product) =>
@@ -49,7 +50,7 @@ export const Shop = () => {
             </button>
             <h2>{enlargedProduct.productName}</h2>
             <p>{enlargedProduct.description}</p>
-            <img src={enlargedProduct.productImage} alt={enlargedProduct.productName} />
+            <img src={enlargedProduct.productImage}  alt={enlargedProduct.productName} />
           </div>
         </div>
       )}

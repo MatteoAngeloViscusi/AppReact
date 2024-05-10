@@ -22,12 +22,14 @@ export const Cart = () => {
         <div>
           <h1>Il tuo carrello</h1>
         </div>
-        {PRODUCTS.map((product) => {
-          if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} key={product.id} />; 
-          }
-          return null;
-        })}
+        <div className="centered-items">
+          {PRODUCTS.map((product) => {
+            if (cartItems[product.id] !== 0) {
+              return <CartItem data={product} key={product.id} />; 
+            }
+            return null;
+          })}
+        </div>
       </div>
 
       {totalAmount > 0 ? (
