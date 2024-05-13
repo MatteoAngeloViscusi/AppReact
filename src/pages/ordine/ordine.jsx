@@ -30,6 +30,8 @@ export const Ordine = () => {
 
     const completeOrder = () => {
         clearCart();
+        const tempoOrdine = Date.now();
+        sessionStorage.setItem('tempoOrdine', tempoOrdine.toString());
         navigate("/checkout");
     };
 
