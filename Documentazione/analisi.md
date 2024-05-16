@@ -22,7 +22,8 @@ Sviluppare un'applicazione web con React per la gestione di un negozio online di
 ## **CARATTERISTICHE** **DEL** **SISTEMA**:
 - Frontend Framework: React utilizza un approccio basato sui componenti per la costruzione delle interfacce utente. I componenti sono blocchi modulari autonomi che possono essere riutilizzati in tutta l'applicazione. Questo favorisce una maggiore modularità, facilità di manutenzione e sviluppo scalabile.
 - IDE: Visual Studio Code.
--pacchetti aggiuntivi: yarn, react-router-dom, phosphor-react.
+
+- pacchetti aggiuntivi: yarn, react-router-dom, phosphor-react.
 
 ## **PROBLEMATICHE E POSSIBILI SOLUZIONI:**
 - Sicurezza: i dati usati dagli utenti durante i pagamenti potrebbero essere intercettati e rubati da malintenzionati. 
